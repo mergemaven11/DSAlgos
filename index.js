@@ -60,19 +60,21 @@ class HashTable {
 
 const myHashTable = new HashTable(50);
 
-myHashTable.set("grapes", 1000);
-myHashTable.set("grapess", 1000);
-myHashTable.set("apples", 4000);
+myHashTable.set("grapes", 1000); // collision | bananas
+myHashTable.set("oranges", 1000);
+myHashTable.set("apples", 4000); 
+myHashTable.set("peaches", 4000);
+myHashTable.set("bananas", 4000); //collision | grapes
 // myHashTable.get('grapes')
 
 
 // test:
-// console.log(myHashTable);
+console.log(myHashTable.data);
 
 // Get test
 // console.log(myHashTable.get("apples"));
 // console.log(myHashTable.get("grapes"));
-// console.log(myHashTable.get('grapess'));
+// console.log(myHashTable.get('oranges'));
 
 
 // Keys test: 
